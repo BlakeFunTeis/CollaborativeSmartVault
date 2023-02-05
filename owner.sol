@@ -8,6 +8,7 @@ contract OwnerAction is Ownable {
     struct Actions {
         bool withdrawal;
         bool deposit;
+        uint depositWei;
     }
 
     mapping (address => Actions) AddressAccess;
